@@ -1,13 +1,14 @@
 import logo from "../../assets/logo-git.png";
-import github from "../../assets/git-text.png";
-import styles from "./styles.module.css";
 
 export function Header() {
   return (
-    <header className={styles.container}>
-      <img src={logo} alt="logo github" width={58} height={58} />
-      <h1 className={styles.h1}>Perfil</h1>
-      <img src={github} alt="texto github" width={160} height={45} />
-    </header>
+    <div className="flex justify-center items-center h-[200px]">
+      <header className="flex justify-between items-center h-[82px] w-[420px] bg-red-700">
+        <img src={logo} alt="logo github" width={58} height={58} />
+        <h1 className="text-white text-6xl">
+          Perfil <strong>Github</strong>
+        </h1>
+      </header>
+    </div>
   );
 }
